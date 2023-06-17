@@ -1,0 +1,25 @@
+.container-fluid {
+	width: 100%;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container {
+	@extend .container-fluid;
+	margin: 0 auto;
+	width: var(--container_width);
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.section_spacing {
+	padding: 10vmin 0;
+}

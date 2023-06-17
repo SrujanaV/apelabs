@@ -1,0 +1,135 @@
+@import "../helpers/helpers.scss";
+@import "variables.scss";
+@import "fontface.scss";
+@import "text_bg_color.scss";
+@import "typography.scss";
+@import "bootstrap3.scss";
+
+body {
+  margin: 0;
+  @extend .text_reg;
+  font-family: var(--font_secondary);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color_brown);
+}
+
+.container-fluid {
+  width: 100%;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  @extend .container-fluid;
+  margin: 0 auto;
+  width: var(--container_width);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text_center {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+picture {
+  display: block !important;
+}
+
+.section_spacing {
+  padding: 10vmin 0;
+}
+
+//text styles
+.text_uppercase{
+  text-transform: uppercase;
+}
+
+//text colors
+.text_primary{
+  color: var(--color_primary);
+}
+.text_secondary{
+  color: var(--color_secondary);
+}
+
+//classes for fonts
+.font_primary {
+  font-family: var(--font_primary);
+  font-weight: normal;
+}
+
+.font_secondary {
+  font-family: var(--font_secondary);
+}
+
+//classes for background
+.bg_primary{
+  background-color: var(--color_primary);
+}
+.bg_secondary{
+  background-color: var(--color_secondary);
+}
+
+//classes for buttons
+.cmn_btn{
+  background-color: var(--color_primary);
+  color: var(--color_secondary);
+  border-radius: 20px;
+  padding: 10px 20px;
+  @extend .text_md;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cmn_link{
+  @extend .text_sm;
+  @extend .text_primary;
+  display: inline-block;
+  @extend %relative_box;
+  margin-top: 20px;
+  &:hover{
+    &:after{
+      width: 0;
+    }
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: var(--color_primary);
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    transition: var(--transition);
+  }
+}
+
+.white_btn{
+  background-color: var(--color_secondary);
+  color: var(--color_primary);
+}
+
+//custom styles
+.section{
+  @extend %relative_box;
+  height: 100vh;
+  @extend %f_r_a_center;
+}

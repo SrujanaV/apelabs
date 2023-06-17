@@ -1,0 +1,34 @@
+@import "../helpers/helpers.scss";
+@import "variables.scss";
+@import "fontface.scss";
+@import "textBgColor.scss";
+@import "typography.scss";
+@import "bootstrapClasses.scss";
+@import "fontClasses.scss";
+@import "utils.scss";
+
+body {
+	margin: 0;
+	@extend .text_reg;
+	font-family: var(--font_secondary);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color_brown);
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+picture {
+	display: block !important;
+}
