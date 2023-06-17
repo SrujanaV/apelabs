@@ -37,9 +37,16 @@ export default function Section3() {
 							<img src="img/products/product1.png" />
 						</div>
 						<div className={`${styles.section_left_content} col-md-6 text_center`}>
-							<h2 className={`text_primary font_secondary text_xl`}>
-								LITSTEN TO THE BEAT OF YOUR OFFBEAT HEART
-							</h2>
+							<div>
+								<h2 className={`text_primary font_secondary text_lg`}>
+									SWEAT AND WATER RESISTANT
+								</h2>
+								<p className={`text_primary ${styles.section_desc}`}>
+									When we say our AirSpin is built to bear anything from sprinkled water
+									to sweaty workout, we mean it. Because we know our weirdos. They just
+									can’t live without music in their ears while working out.
+								</p>
+							</div>
 							<Link href="">
 								<a className="cmn_btn">ORDER NOW</a>
 							</Link>
