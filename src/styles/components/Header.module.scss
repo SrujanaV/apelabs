@@ -2,8 +2,13 @@
 
 .main_header {
   @extend %full_overlay;
-  @extend %f_r_aj_center;
+  @extend %f_r_a_center;
+  justify-content: space-between;
+  padding: 20px;
   height: 100px;
   position: fixed;
   z-index: 20;
+  .header_links{
+    @extend %f_r_a_center;
+  }
 }

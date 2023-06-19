@@ -9,12 +9,12 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				{/* <Link rel="preconnect" href="https://fonts.googleapis.com"></Link>
-				<Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></Link>
-				<Link
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" />
+				<link
 					href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
 					rel="stylesheet"
-				></Link> */}
+				/>
 			</Head>
 			<Component {...pageProps} />
 		</>

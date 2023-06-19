@@ -1,9 +1,99 @@
+@import "../helpers/helpers.scss";
+
 .apelabs {
+    // overflow: hidden;
     .elements {
         position: absolute;
     }
-    .section_row{
+
+    .section_row {
         align-items: center;
+    }
+
+    .hero_wrap {
+        background-color: var(--color_secondary);
+        width: 200vw;
+        height: 100vh;
+        @extend %d_flex;
+
+        .heroSection1 {
+            width: 40%;
+            justify-content: center;
+            align-items: flex-end;
+
+            .leaf1 {
+                left: 0;
+                bottom: 0;
+                width: 25%;
+            }
+
+            .leaf2 {
+                right: 0;
+                bottom: 0;
+                width: 27%;
+            }
+
+            .section_content {
+                text-align: center;
+
+                .hero_content {
+
+                    .logo_img {
+                        img {
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .hero_text {
+                        margin: 20px 0;
+                    }
+
+                    .hero_img {
+                        width: 50%;
+                        margin: 0 auto;
+
+                        img {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .heroSection2 {
+            width: 60%;
+
+            .hero_left1 {
+                left: 0;
+                bottom: 0;
+                width: 38%;
+            }
+
+            .hero_left2 {
+                right: 0;
+                bottom: 0;
+                width: 38%;
+            }
+
+            .hero2_content {
+                @extend %relative_box;
+                .airspin_text_img {
+                    @extend %rel_xy_center;
+                }
+
+                .airspin_img {
+                    margin: 0 auto;
+                }
+                .button_section{
+                    @extend %d_flex;
+                    @extend %rel_x_center;
+                    bottom: 0;
+                    a{
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
     }
 
     .section1 {
@@ -18,19 +108,22 @@
         .leaf2 {
             right: 0;
             bottom: 0;
-            width: 25%;
+            width: 20%;
         }
 
         .section_content {
             width: 80%;
             margin: 0 auto;
-            .section_left_content{
-                padding-right: 5%;
+
+            .section_left_content {
+                padding-right: 3%;
             }
         }
     }
-    .section3{
+
+    .section3 {
         background-color: #671EDD;
+
         .leaf1 {
             left: 0;
             bottom: 0;
@@ -43,14 +136,18 @@
             width: 20%;
         }
     }
-    .section4{
+
+    .section4 {
         background-color: #875551;
-        .section_left_content{
+
+        .section_left_content {
             padding: 0 5%;
-            .section_desc{
+
+            .section_desc {
                 margin: 20px 0;
             }
         }
+
         .leaf1 {
             right: 0;
             bottom: 0;
@@ -63,8 +160,10 @@
             width: 20%;
         }
     }
-    .section5{
+
+    .section5 {
         background-color: #2E7C53;
+
         .leaf1 {
             left: 0;
             bottom: 0;
@@ -77,15 +176,19 @@
             width: 11.5%;
         }
     }
-    .section6{
+
+    .section6 {
         background-color: #84774E;
         overflow: hidden;
-        .section_left_content{
+
+        .section_left_content {
             padding: 0 8%;
-            .section_desc{
+
+            .section_desc {
                 margin: 20px 0;
             }
         }
+
         .leaf1 {
             left: 0;
             bottom: 0;

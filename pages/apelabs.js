@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 // Sections //
+import HeroSection1 from "./sections/heroSection1";
 import Section1 from "./sections/section1";
 import Section3 from "./sections/section3";
 import Section4 from "./sections/section4";
@@ -30,31 +31,24 @@ gsap.registerPlugin(ScrollTrigger);
 
 /** Home Page */
 export default function Apelabs() {
-	let innerWidth = 400;
-	let innerHeight = 100;
-	useEffect(() => {
-		gsap.set(".massiveImage", {
-			backgroundImage: `url(https://source.unsplash.com/random/${
-				innerWidth * 3
-			}x${innerHeight})`,
-		});
+	// useEffect(() => {
+	// 	let winWidth = window.innerWidth;
+	// 	let winHeight = window.innerHeight;
 
-		gsap.to(".massiveImage", {
-			xPercent: -100,
-			x: () => innerWidth,
-			ease: "none",
-			scrollTrigger: {
-				trigger: ".massiveImage",
-				start: "top top",
-				end: () => innerWidth * 3,
-				scrub: true,
-				pin: true,
-				invalidateOnRefresh: true,
-				anticipatePin: 1,
-			},
-		});
-	}, []);
-
+	// 	gsap.to(".hero_wrap", {
+	// 		xPercent: -100,
+	// 		x: () => winWidth,
+	// 		ease: "none",
+	// 		scrollTrigger: {
+	// 			trigger: ".hero_wrap",
+	// 			start: "top top",
+	// 			end: () => winWidth * 3,
+	// 			scrub: true,
+	// 			pin: true,
+	// 			markers: true,
+	// 		},
+	// 	});
+	// }, []);
 	return (
 		<div>
 			<Head>
@@ -65,6 +59,7 @@ export default function Apelabs() {
 
 			<Header />
 			<main className={`${styles.apelabs}`}>
+				<HeroSection1 />
 				<Section1 />
 				<Section3 />
 				<Section4 />

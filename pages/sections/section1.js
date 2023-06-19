@@ -38,7 +38,7 @@ export default function Section1() {
 									LITSTEN TO THE BEAT OF YOUR OFFBEAT HEART
 								</h2>
 								<Link href="">
-									<a className="cmn_btn">ORDER NOW</a>
+									<a className="cmn_white_btn">ORDER NOW</a>
 								</Link>
 								<br />
 								<Link href="">

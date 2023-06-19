@@ -8,7 +8,8 @@
 body {
   margin: 0;
   @extend .text_reg;
-  font-family: var(--font_secondary);
+  font-family: 'Montserrat', sans-serif;
+  // font-family: var(--font_secondary);
 }
 
 * {
@@ -77,7 +78,7 @@ picture {
 }
 
 .font_secondary {
-  font-family: var(--font_secondary);
+  font-weight: 700;
 }
 
 //classes for background
@@ -90,13 +91,33 @@ picture {
 
 //classes for buttons
 .cmn_btn{
-  background-color: var(--color_primary);
-  color: var(--color_secondary);
   border-radius: 20px;
   padding: 10px 20px;
   @extend .text_md;
   display: inline-block;
   margin-top: 20px;
+  transition: ease all 300ms;
+}
+.cmn_white_btn{
+  border: solid 1px var(--color_primary);
+  background-color: var(--color_primary);
+  color: var(--color_secondary);
+  @extend .cmn_btn;
+  &:hover{
+    background-color: transparent;
+    color: var(--color_primary);
+  }
+}
+
+.transparent_btn{
+  background-color: transparent;
+  border: solid 1px var(--color_primary);
+  color: var(--color_primary);
+  @extend .cmn_btn;
+  &:hover{
+    background-color: white;
+    color: var(--color_secondary);
+  }
 }
 
 .cmn_link{

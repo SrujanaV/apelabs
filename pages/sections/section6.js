@@ -38,7 +38,7 @@ export default function Section6() {
 									</p>
 								</div>
 								<Link href="">
-									<a className="cmn_btn">ORDER NOW</a>
+									<a className="cmn_white_btn">ORDER NOW</a>
 								</Link>
 								<br />
 								<Link href="">
