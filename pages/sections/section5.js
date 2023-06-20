@@ -23,13 +23,13 @@ export default function Section5() {
 				<div className={`${styles.leaf2} ${styles.elements}`}>
 					<img src="img/section6Lright.png" />
 				</div>
+				<div className={styles.product_img}>
+					<img src="img/products/section6product.png" />
+				</div>
 				<div className="container">
 					<div className={`${styles.section_content} even_section section_spacing`}>
 						<div className={`${styles.section_row} row`}>
-							<div className="col-md-5">
-								<img src="img/products/section6product.png" />
-							</div>
-							<div className={`${styles.section_left_content} col-md-7 text_center`}>
+							<div className={`${styles.section_left_content} col-md-5 text_center`}>
 								<div>
 									<h2 className={`text_primary font_secondary text_lg`}>
 										ERGONOMIC DESIGN

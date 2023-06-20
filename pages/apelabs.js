@@ -13,6 +13,7 @@ import Header from "../components/Header";
 // Sections //
 import HeroSection1 from "./sections/heroSection1";
 import Section1 from "./sections/section1";
+import Section2 from "./sections/section2";
 import Section3 from "./sections/section3";
 import Section4 from "./sections/section4";
 import Section5 from "./sections/section5";
@@ -42,7 +43,7 @@ export default function Apelabs() {
 	// 		scrollTrigger: {
 	// 			trigger: ".hero_wrap",
 	// 			start: "top top",
-	// 			end: () => winWidth * 3,
+	// 			end: () => winWidth * 1,
 	// 			scrub: true,
 	// 			pin: true,
 	// 			markers: true,
@@ -61,6 +62,7 @@ export default function Apelabs() {
 			<main className={`${styles.apelabs}`}>
 				<HeroSection1 />
 				<Section1 />
+				<Section2 />
 				<Section3 />
 				<Section4 />
 				<Section5 />

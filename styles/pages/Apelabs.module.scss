@@ -1,6 +1,7 @@
 @import "../helpers/helpers.scss";
 
 .apelabs {
+
     // overflow: hidden;
     .elements {
         position: absolute;
@@ -10,6 +11,20 @@
         align-items: center;
     }
 
+    .button_section {
+        @extend %d_flex;
+        @extend %rel_x_center;
+        bottom: 0;
+
+        a {
+            margin: 0 10px;
+        }
+    }
+    
+    .section_desc {
+        margin: 20px 0;
+    }
+    
     .hero_wrap {
         background-color: var(--color_secondary);
         width: 200vw;
@@ -77,20 +92,13 @@
 
             .hero2_content {
                 @extend %relative_box;
+
                 .airspin_text_img {
                     @extend %rel_xy_center;
                 }
 
                 .airspin_img {
                     margin: 0 auto;
-                }
-                .button_section{
-                    @extend %d_flex;
-                    @extend %rel_x_center;
-                    bottom: 0;
-                    a{
-                        margin: 0 10px;
-                    }
                 }
             }
         }
@@ -116,7 +124,27 @@
             margin: 0 auto;
 
             .section_left_content {
-                padding-right: 3%;
+                padding-right: 5%;
+            }
+        }
+    }
+
+    .section2 {
+        .section_content{
+            .product_wrap {
+                @extend %f_r_a_center;
+            }
+            .section_text{
+                text-align: center;
+            }
+            .button_section{
+                align-items: center;
+                .cmn_link{
+                    color: var(--color_secondary);
+                    &:after{
+                        background-color: var(--color_secondary);
+                      }
+                }
             }
         }
     }
@@ -128,12 +156,18 @@
             left: 0;
             bottom: 0;
             width: 35%;
+            z-index: 2;
         }
 
         .leaf2 {
             right: 0;
             bottom: 0;
             width: 20%;
+        }
+        .section_row{
+            width: 80%;
+            margin-left: auto;
+            justify-content: flex-end;
         }
     }
 
@@ -142,22 +176,26 @@
 
         .section_left_content {
             padding: 0 5%;
-
-            .section_desc {
-                margin: 20px 0;
-            }
         }
 
         .leaf1 {
             right: 0;
             bottom: 0;
             width: 25.3%;
+            z-index: 2;
         }
 
         .leaf2 {
             right: 0;
             bottom: 0;
             width: 20%;
+            z-index: 2;
+        }
+        .product_img{
+            width: 40%;
+            position: absolute;
+            bottom: 0;
+            right: 9%;
         }
     }
 
@@ -168,12 +206,22 @@
             left: 0;
             bottom: 0;
             width: 32%;
+            z-index: 2;
         }
 
         .leaf2 {
             right: 0;
             bottom: 0;
             width: 11.5%;
+        }
+        .product_img{
+            position: absolute;
+            bottom: -8%;
+            width: 30%;
+            left: 19%;
+        }
+        .section_row{
+            justify-content: flex-end;
         }
     }
 
@@ -183,10 +231,6 @@
 
         .section_left_content {
             padding: 0 8%;
-
-            .section_desc {
-                margin: 20px 0;
-            }
         }
 
         .leaf1 {

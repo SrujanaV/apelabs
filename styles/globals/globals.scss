@@ -1,6 +1,5 @@
 @import "../helpers/helpers.scss";
 @import "variables.scss";
-@import "fontface.scss";
 @import "text_bg_color.scss";
 @import "typography.scss";
 @import "bootstrap3.scss";
@@ -143,9 +142,14 @@ picture {
   }
 }
 
-.white_btn{
+.black_btn{
+  border: solid 1px var(--color_secondary);
   background-color: var(--color_secondary);
   color: var(--color_primary);
+  &:hover{
+    background-color: var(--color_primary);
+    color: var(--color_secondary);
+  }
 }
 
 //custom styles

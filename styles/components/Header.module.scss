@@ -29,6 +29,21 @@
           height: 60%;
           background-color: var(--color_primary);
         }
+        &:before{
+          content: "";
+          width:0;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background-color: var(--color_primary);
+          transition: var(--transition);
+        }
+        &:hover{
+          &:before{
+            width: 100%;
+          }
+        }
         &:last-child{
           &::after{
             display: none;
@@ -41,6 +56,22 @@
     }
     .small_link{
       margin: 0 10px;
+      @extend %relative_box;
+      &:before{
+        content: "";
+        width:0;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: var(--color_primary);
+        transition: var(--transition);
+      }
+      &:hover{
+        &:before{
+          width: 100%;
+        }
+      }
     }
   }
 }
