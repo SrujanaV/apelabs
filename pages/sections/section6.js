@@ -21,7 +21,7 @@ export default function Section6() {
 					<img src="img/section7right.png" />
 				</div>
 				<div className={`${styles.leaf2} ${styles.elements}`}>
-					<img src="img/products/product1.png" />
+					<img src="img/products/section7product.png" />
 				</div>
 				<div className="container">
 					<div className={`${styles.section_content} even_section section_spacing`}>

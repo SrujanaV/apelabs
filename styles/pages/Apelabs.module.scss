@@ -2,7 +2,8 @@
 
 .apelabs {
 
-    // overflow: hidden;
+    overflow: hidden;
+
     .elements {
         position: absolute;
     }
@@ -20,11 +21,11 @@
             margin: 0 10px;
         }
     }
-    
+
     .section_desc {
         margin: 20px 0;
     }
-    
+
     .hero_wrap {
         background-color: var(--color_secondary);
         width: 200vw;
@@ -35,6 +36,10 @@
             width: 40%;
             justify-content: center;
             align-items: flex-end;
+
+            @include sm-down {
+                width: 60%;
+            }
 
             .leaf1 {
                 left: 0;
@@ -111,6 +116,10 @@
             left: 0;
             bottom: 0;
             width: 25%;
+
+            @include sm-down {
+                bottom: 70%;
+            }
         }
 
         .leaf2 {
@@ -123,6 +132,12 @@
             width: 80%;
             margin: 0 auto;
 
+            .section_row {
+                @include sm-down {
+                    flex-direction: column-reverse;
+                }
+            }
+
             .section_left_content {
                 padding-right: 5%;
             }
@@ -130,20 +145,36 @@
     }
 
     .section2 {
-        .section_content{
+        .section_content {
             .product_wrap {
                 @extend %f_r_a_center;
+
+                // @include sm-down {
+                //     .product_img {
+                //         &:first-child {
+                //             display: none;
+                //         }
+
+                //         &:last-child {
+                //             display: none;
+                //         }
+                //     }
+                // }
             }
-            .section_text{
+
+            .section_text {
                 text-align: center;
             }
-            .button_section{
+
+            .button_section {
                 align-items: center;
-                .cmn_link{
+
+                .cmn_link {
                     color: var(--color_secondary);
-                    &:after{
+
+                    &:after {
                         background-color: var(--color_secondary);
-                      }
+                    }
                 }
             }
         }
@@ -164,10 +195,14 @@
             bottom: 0;
             width: 20%;
         }
-        .section_row{
+
+        .section_row {
             width: 80%;
             margin-left: auto;
             justify-content: flex-end;
+            @include sm-down{
+                width: 100%;
+            }
         }
     }
 
@@ -191,7 +226,8 @@
             width: 20%;
             z-index: 2;
         }
-        .product_img{
+
+        .product_img {
             width: 40%;
             position: absolute;
             bottom: 0;
@@ -214,13 +250,15 @@
             bottom: 0;
             width: 11.5%;
         }
-        .product_img{
+
+        .product_img {
             position: absolute;
-            bottom: -8%;
-            width: 30%;
-            left: 19%;
+            bottom: -14%;
+            width: 33%;
+            left: 18%;
         }
-        .section_row{
+
+        .section_row {
             justify-content: flex-end;
         }
     }
@@ -241,8 +279,8 @@
 
         .leaf2 {
             right: -10%;
-            bottom: -10%;
-            width: 50%;
+            bottom: -24%;
+            width: 54%;
         }
     }
 }

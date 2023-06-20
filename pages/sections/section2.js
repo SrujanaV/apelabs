@@ -48,65 +48,65 @@ export default function section2() {
 							<div>
 								<div className={`${styles.product_wrap}`}>
 									<div className="product_img">
-										<img src="img/left21.png" />
+										<img src="img/products/left21.png" />
 									</div>
 									<div className="product_img">
-										<img src="img/main_img_sec21.png" />
+										<img src="img/products/main_img_sec21.png" />
 									</div>
 									<div className="product_img">
-										<img src="img/right21.png" />
-									</div>
-								</div>
-							</div>
-							<div>
-								<div className={`${styles.product_wrap}`}>
-									<div className="product_img">
-										<img src="img/left21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/main_img_sec21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/right21.png" />
+										<img src="img/products/right21.png" />
 									</div>
 								</div>
 							</div>
 							<div>
 								<div className={`${styles.product_wrap}`}>
 									<div className="product_img">
-										<img src="img/left21.png" />
+										<img src="img/products/left21.png" />
 									</div>
 									<div className="product_img">
-										<img src="img/main_img_sec21.png" />
+										<img src="img/products/main_img_sec21.png" />
 									</div>
 									<div className="product_img">
-										<img src="img/right21.png" />
-									</div>
-								</div>
-							</div>
-							<div>
-								<div className={`${styles.product_wrap}`}>
-									<div className="product_img">
-										<img src="img/left21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/main_img_sec21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/right21.png" />
+										<img src="img/products/right21.png" />
 									</div>
 								</div>
 							</div>
 							<div>
 								<div className={`${styles.product_wrap}`}>
 									<div className="product_img">
-										<img src="img/left21.png" />
+										<img src="img/products/left21.png" />
 									</div>
 									<div className="product_img">
-										<img src="img/main_img_sec21.png" />
+										<img src="img/products/main_img_sec21.png" />
 									</div>
 									<div className="product_img">
-										<img src="img/right21.png" />
+										<img src="img/products/right21.png" />
+									</div>
+								</div>
+							</div>
+							<div>
+								<div className={`${styles.product_wrap}`}>
+									<div className="product_img">
+										<img src="img/products/left21.png" />
+									</div>
+									<div className="product_img">
+										<img src="img/products/main_img_sec21.png" />
+									</div>
+									<div className="product_img">
+										<img src="img/products/right21.png" />
+									</div>
+								</div>
+							</div>
+							<div>
+								<div className={`${styles.product_wrap}`}>
+									<div className="product_img">
+										<img src="img/products/left21.png" />
+									</div>
+									<div className="product_img">
+										<img src="img/products/main_img_sec21.png" />
+									</div>
+									<div className="product_img">
+										<img src="img/products/right21.png" />
 									</div>
 								</div>
 							</div>

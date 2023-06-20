@@ -33,7 +33,9 @@ export default function Section1() {
 				<div className="container">
 					<div className={`${styles.section_content} even_section section_spacing`}>
 						<div className={`${styles.section_row} row`}>
-							<div className={`${styles.section_left_content} col-md-6 text_center`}>
+							<div
+								className={`${styles.section_left_content} col-md-6 col-xs-12 text_center`}
+							>
 								<h2 className={`text_primary font_secondary text_xl`}>
 									LITSTEN TO THE BEAT OF YOUR OFFBEAT HEART
 								</h2>

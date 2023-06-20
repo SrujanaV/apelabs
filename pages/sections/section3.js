@@ -33,8 +33,8 @@ export default function Section3() {
 				<div className="container">
 					{/* <div className={`${styles.section_content} even_section section_spacing`}> */}
 					<div className={`${styles.section_row} row`}>
-						<div className="col-md-5">
-							<img src="img/products/product1.png" />
+						<div className="col-md-6">
+							<img src="img/products/section4prod.png" />
 						</div>
 						<div className={`${styles.section_left_content} col-md-6 text_center`}>
 							<div>
