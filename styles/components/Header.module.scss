@@ -1,77 +1,86 @@
 @import "../helpers/helpers.scss";
 
+.header {
+	position: fixed;
+	width: 100%;
+	transition: var(--transition);
+	height: 70px;
+	z-index: 90;
+}
 .main_header {
-  @extend %full_overlay;
-  @extend %f_r_a_center;
-  justify-content: space-between;
-  padding: 20px;
-  height: 100px;
-  position: fixed;
-  z-index: 20;
-  .logo{
-    width: 70px;
-  }
-  .header_links{
-    @extend %f_r_a_center;
-    img{
-      margin: 0 auto;
-    }
-    .other_links{
-      @extend %f_r_a_center;
-      .link{
-        margin: 0 20px;
-        @extend %relative_box;
-        &:after{
-          content: "";
-          @extend %rel_y_center;
-          right: -20px;
-          width: 2px;
-          height: 60%;
-          background-color: var(--color_primary);
-        }
-        &:before{
-          content: "";
-          width:0;
-          height: 2px;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          background-color: var(--color_primary);
-          transition: var(--transition);
-        }
-        &:hover{
-          &:before{
-            width: 100%;
-          }
-        }
-        &:last-child{
-          &::after{
-            display: none;
-          }
-        }
-      }
-    }
-    .white_ape{
-      width: 35px;
-    }
-    .small_link{
-      margin: 0 10px;
-      @extend %relative_box;
-      &:before{
-        content: "";
-        width:0;
-        height: 2px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        background-color: var(--color_primary);
-        transition: var(--transition);
-      }
-      &:hover{
-        &:before{
-          width: 100%;
-        }
-      }
-    }
-  }
+	@extend %f_r_a_center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 20px;
+	height: 70px;
+	.logo {
+		width: 50px;
+	}
+	.header_links {
+		@extend %f_r_a_center;
+		img {
+			margin: 0 auto;
+		}
+		.other_links {
+			@extend %f_r_a_center;
+			.link {
+				margin: 0 20px;
+				@extend %relative_box;
+				&:after {
+					content: "";
+					@extend %rel_y_center;
+					right: -20px;
+					width: 2px;
+					height: 60%;
+					background-color: var(--color_primary);
+				}
+				&:before {
+					content: "";
+					width: 0;
+					height: 2px;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					background-color: var(--color_primary);
+					transition: var(--transition);
+				}
+				&:hover {
+					&:before {
+						width: 100%;
+					}
+				}
+				&:last-child {
+					&::after {
+						display: none;
+					}
+				}
+			}
+		}
+		.white_ape {
+			width: 30px;
+		}
+		.small_link {
+			margin: 0 10px;
+			@extend %relative_box;
+			&:before {
+				content: "";
+				width: 0;
+				height: 2px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background-color: var(--color_primary);
+				transition: var(--transition);
+			}
+			&:hover {
+				&:before {
+					width: 100%;
+				}
+			}
+		}
+		.cart,
+		.hamburger {
+			margin: 0 10px;
+		}
+	}
 }

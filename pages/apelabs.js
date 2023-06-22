@@ -32,24 +32,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 /** Home Page */
 export default function Apelabs() {
-	// useEffect(() => {
-	// 	let winWidth = window.innerWidth;
-	// 	let winHeight = window.innerHeight;
-
-	// 	gsap.to(".hero_wrap", {
-	// 		xPercent: -100,
-	// 		x: () => winWidth,
-	// 		ease: "none",
-	// 		scrollTrigger: {
-	// 			trigger: ".hero_wrap",
-	// 			start: "top top",
-	// 			end: () => winWidth * 1,
-	// 			scrub: true,
-	// 			pin: true,
-	// 			markers: true,
-	// 		},
-	// 	});
-	// }, []);
+	useEffect(() => {
+		let winWidth = window.innerWidth;
+		var prevScrollpos = window.scrollY;
+		window.onscroll = function () {
+			var currentScrollPos = window.scrollY;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("header").style.top = "0";
+			} else {
+				document.getElementById("header").style.top = "-70px";
+			}
+			prevScrollpos = currentScrollPos;
+			if (prevScrollpos > 50) {
+				document.getElementById("header").style.backdropFilter =
+					"saturate(180%) blur(20px)";
+				document.getElementById("header").style.backgroundColor =
+					"rgba(66,66,66,.8)";
+			} else {
+				document.getElementById("header").style.backdropFilter = "none";
+				document.getElementById("header").style.backgroundColor = "transparent";
+			}
+		};
+	}, []);
 	return (
 		<div>
 			<Head>

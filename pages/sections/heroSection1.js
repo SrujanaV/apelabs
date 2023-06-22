@@ -90,10 +90,10 @@ export default function heroSection1() {
 					<div className={`even_section section_spacing`}>
 						<div className={styles.hero2_content}>
 							<div className={styles.airspin_text_img}>
-								<img src="img/airspin_text.png" className="airspin_img" />
+								<img src="img/airspin_text.png" />
 							</div>
 							<div className={styles.logo_img}>
-								<img src="img/airspin.png" className="airspin_img" />
+								<img src="img/airspin.png" className={styles.airspin_img} />
 							</div>
 							<div className={styles.button_section}>
 								<Link href="">
