@@ -28,8 +28,8 @@ export default function Home() {
 
 			<Header />
 			<main className={`${styles.index_page}`}>
-				<h2>This is ting base next.js template</h2>
-				<Link href="apelabs">Click</Link>
+				<div className=""></div>
+				<div className=""></div>
 			</main>
 			<Footer />
 		</div>

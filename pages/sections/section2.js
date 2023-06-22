@@ -114,7 +114,7 @@ export default function section2() {
 						<p className={styles.section_text}>Pick your colour</p>
 						<ul></ul>
 						<div className={styles.button_section}>
-							<Link href="">
+							<Link href="productInside">
 								<a className="cmn_btn black_btn">ORDER NOW</a>
 							</Link>
 							<br />

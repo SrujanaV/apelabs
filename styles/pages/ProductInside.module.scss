@@ -1,0 +1,68 @@
+@import "../helpers/helpers.scss";
+.product_inside {
+	overflow: hidden;
+	@extend %d_flex;
+	height: 100vh;
+	.inside_left {
+		padding-left: var(--container_left_space);
+		background-color: #f3eae3;
+		width: 50%;
+		.left_content {
+			margin-top: 5%;
+			width: 70%;
+			.airspinTextImg {
+				filter: invert(1);
+			}
+			.rupee_text {
+				margin: 10px 0;
+			}
+			.colors {
+				margin-bottom: 10px;
+				@extend %d_flex;
+				.colors_inside {
+					background-color: black;
+					width: 30px;
+					height: 30px;
+					border-radius: 50px;
+					margin: 0 5px;
+					cursor: pointer;
+					&:first-child {
+						margin-left: 0;
+						background-color: #c1c1c1;
+					}
+					&:nth-of-type() {
+						background-color: #212629;
+					}
+					&:nth-of-type(3) {
+						background-color: #6b64cc;
+					}
+					&:nth-of-type(4) {
+						background-color: #e89c77;
+					}
+					&:last-child {
+						background-color: #7a98d3;
+					}
+				}
+			}
+			.inside_btn {
+				width: 100%;
+				text-align: center;
+				border: solid 1px #560dbd;
+				background-color: #560dbd;
+				color: var(--color_primary);
+				&:hover {
+					background-color: transparent;
+					color: #560dbd;
+				}
+			}
+		}
+	}
+	.inside_right {
+		width: 50%;
+		.product_img {
+			img {
+				margin: 0 auto;
+			}
+		}
+	}
+}
