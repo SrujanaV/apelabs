@@ -47,7 +47,7 @@ export default function Section5() {
 									<a className="cmn_white_btn hidden_xs">ORDER NOW</a>
 								</Link>
 								<br />
-								<Link href="">
+								<Link href="productInside">
 									<a className="cmn_link hidden_xs">LEARN MORE</a>
 								</Link>
 							</div>

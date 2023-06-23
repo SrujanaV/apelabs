@@ -43,7 +43,7 @@ export default function Section1() {
 									<a className="cmn_white_btn">ORDER NOW</a>
 								</Link>
 								<br />
-								<Link href="">
+								<Link href="productInside">
 									<a className="cmn_link">LEARN MORE</a>
 								</Link>
 							</div>

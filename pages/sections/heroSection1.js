@@ -100,7 +100,7 @@ export default function heroSection1() {
 									<a className="cmn_white_btn">ORDER NOW</a>
 								</Link>
 								<br />
-								<Link href="">
+								<Link href="productInside">
 									<a className="transparent_btn">LEARN MORE</a>
 								</Link>
 							</div>
