@@ -4,7 +4,7 @@
 	position: fixed;
 	width: 100%;
 	transition: var(--transition);
-	height: 70px;
+	height: 80px;
 	z-index: 90;
 }
 .main_header {
@@ -12,7 +12,10 @@
 	justify-content: space-between;
 	width: 100%;
 	padding: 20px;
-	height: 70px;
+	height: 80px;
+	@include sm-down {
+		padding: 0;
+	}
 	.logo {
 		width: 50px;
 	}
@@ -81,6 +84,9 @@
 		.cart,
 		.hamburger {
 			margin: 0 10px;
+			@include sm-down {
+				margin: 0;
+			}
 		}
 	}
 }

@@ -163,6 +163,6 @@ picture {
 
 .hidden_xs {
 	@include sm-down {
-		display: none;
+		display: none !important;
 	}
 }

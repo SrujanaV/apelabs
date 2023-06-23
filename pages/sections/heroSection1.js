@@ -30,7 +30,7 @@ export default function heroSection1() {
 	// 		scrollTrigger: {
 	// 			trigger: ".hero_wrap",
 	// 			start: "top top",
-	// 			end: () => winWidth * 1,
+	// 			end: () => winWidth,
 	// 			scrub: true,
 	// 			pin: true,
 	// 			pinSpacing: false,

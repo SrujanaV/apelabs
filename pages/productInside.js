@@ -8,6 +8,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "../styles/pages/ProductInside.module.scss";
 
+//COMPONENTS//
+import Header from "../components/Header";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 // PLUGINS //
 // import ScrollOut from "scroll-out";
 import Slider from "react-slick";
@@ -17,6 +21,30 @@ import Slider from "react-slick";
 
 /** Home Page */
 export default function ProductInside() {
+	useEffect(() => {
+		let winWidth = window.innerWidth;
+		var prevScrollpos = window.scrollY;
+		document.getElementById("header").style.backdropFilter =
+			"saturate(180%) blur(20px)";
+		document.getElementById("header").style.backgroundColor = "rgba(66,66,66,.8)";
+		window.onscroll = function () {
+			var currentScrollPos = window.scrollY;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("header").style.top = "0";
+			} else {
+				document.getElementById("header").style.top = "-80px";
+			}
+			prevScrollpos = currentScrollPos;
+			if (prevScrollpos > 50) {
+				document.getElementById("header").style.backdropFilter =
+					"saturate(180%) blur(20px)";
+				document.getElementById("header").style.backgroundColor =
+					"rgba(66,66,66,.8)";
+			} else {
+				document.getElementById("header").style.backdropFilter = "none";
+			}
+		};
+	}, []);
 	var settings = {
 		dots: true,
 		infinite: true,
@@ -34,13 +62,22 @@ export default function ProductInside() {
 			</div>
 		),
 	};
+	const [activeSidebar, setActiveSidebar] = useState(false);
+	const handleClick = () => {
+		setActiveSidebar(!activeSidebar);
+	};
 	return (
-		<>
+		<div className={styles.product_inside_wrap}>
+			<Header />
 			<section className={styles.product_inside}>
 				<div className={styles.inside_left}>
 					<div className={styles.left_content}>
 						<div>
-							<img src="img/airspin_text.png" className={styles.airspinTextImg} />
+							<img
+								src="img/airspin_text.png"
+								className={styles.airspinTextImg}
+								width={190}
+							/>
 							<p className={`${styles.rupee_text} text_xl`}>₹ 1700</p>
 							<div className={styles.colors}>
 								<div className={styles.colors_inside}></div>
@@ -59,9 +96,17 @@ export default function ProductInside() {
 								<a className={`${styles.inside_btn} cmn_btn`}>ORDER</a>
 							</Link>
 							<br />
-							<Link href="features">
+							<ScrollLink
+								className={`${styles.links} text_uppercase text_xl`}
+								offset={0}
+								activeClass={styles.active}
+								to="features"
+								spy={true}
+								smooth={true}
+								onClick={handleClick}
+							>
 								<a className={`${styles.inside_btn} cmn_btn`}>FEATURES</a>
-							</Link>
+							</ScrollLink>
 						</div>
 					</div>
 				</div>
@@ -85,6 +130,18 @@ export default function ProductInside() {
 					</Slider>
 				</div>
 			</section>
-		</>
+			<section className={styles.features} id="features">
+				<div className={`${styles.features_img} ${styles.desktop}`}>
+					<img src="img/features.png" alt="Features" />
+					{/* <picture>
+						<source media="(min-width:767px)" srcset="img/features.png" />
+						<img src="img/features_mobile.png" alt="Features" />
+					</picture> */}
+				</div>
+				<div className={`${styles.features_img} ${styles.mobile}`}>
+					<img src="img/features_mobile.png" alt="Features" />
+				</div>
+			</section>
+		</div>
 	);
 }
