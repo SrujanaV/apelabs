@@ -10,8 +10,16 @@
 	overflow: hidden;
 	@extend %d_flex;
 	height: 100vh;
+	@include sm-down {
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+		height: unset;
+	}
 	:global(.slick-slider) {
 		height: 100vh;
+		@include sm-down {
+			height: 70vh;
+		}
 		:global(.slick-list) {
 			height: 100%;
 		}
@@ -70,9 +78,17 @@
 		padding-left: var(--container_left_space);
 		background-color: #f3eae3;
 		width: 50%;
+		@include sm-down {
+			width: 100%;
+			padding: 20px;
+		}
 		.left_content {
 			margin-top: 100px;
 			width: 80%;
+			@include sm-down {
+				width: 100%;
+				margin-top: 0;
+			}
 			.airspinTextImg {
 				filter: invert(1);
 			}
@@ -123,11 +139,17 @@
 	.inside_right {
 		width: 50%;
 		padding-top: 35px;
+		@include sm-down {
+			width: 100%;
+		}
 		.product_img {
 			width: 60%;
 			height: 85vh;
 			margin: 0 auto;
 			@extend %f_r_a_center;
+			@include sm-down {
+				height: 70vh;
+			}
 			img {
 				margin: 0 auto;
 			}
