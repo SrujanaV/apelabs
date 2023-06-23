@@ -49,65 +49,65 @@ export default function section2() {
 								<div>
 									<div className={`${styles.product_wrap}`}>
 										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/left21.png" />
+											<img src="img/products/section3/Airspin-1a.png" />
 										</div>
 										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/main_img_sec21.png" />
+											<img src="img/products/section3/Airspin-1b.png" />
 										</div>
 										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/right21.png" />
-										</div>
-									</div>
-								</div>
-								<div>
-									<div className={`${styles.product_wrap}`}>
-										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/left21.png" />
-										</div>
-										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/main_img_sec21.png" />
-										</div>
-										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/right21.png" />
+											<img src="img/products/section3/Airspin-1c.png" />
 										</div>
 									</div>
 								</div>
 								<div>
 									<div className={`${styles.product_wrap}`}>
 										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/left21.png" />
+											<img src="img/products/section3/Airspin-2a.png" />
 										</div>
 										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/main_img_sec21.png" />
+											<img src="img/products/section3/Airspin-2b.png" />
 										</div>
 										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/right21.png" />
-										</div>
-									</div>
-								</div>
-								<div>
-									<div className={`${styles.product_wrap}`}>
-										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/left21.png" />
-										</div>
-										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/main_img_sec21.png" />
-										</div>
-										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/right21.png" />
+											<img src="img/products/section3/Airspin-2c.png" />
 										</div>
 									</div>
 								</div>
 								<div>
 									<div className={`${styles.product_wrap}`}>
 										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/left21.png" />
+											<img src="img/products/section3/Airspin-3a.png" />
 										</div>
 										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/main_img_sec21.png" />
+											<img src="img/products/section3/Airspin-3b.png" />
 										</div>
 										<div className={`${styles.product_img} product_img`}>
-											<img src="img/products/right21.png" />
+											<img src="img/products/section3/Airspin-3c.png" />
+										</div>
+									</div>
+								</div>
+								<div>
+									<div className={`${styles.product_wrap}`}>
+										<div className={`${styles.product_img} product_img`}>
+											<img src="img/products/section3/Airspin-4a.png" />
+										</div>
+										<div className={`${styles.product_img} product_img`}>
+											<img src="img/products/section3/Airspin-4b.png" />
+										</div>
+										<div className={`${styles.product_img} product_img`}>
+											<img src="img/products/section3/Airspin-4c.png" />
+										</div>
+									</div>
+								</div>
+								<div>
+									<div className={`${styles.product_wrap}`}>
+										<div className={`${styles.product_img} product_img`}>
+											<img src="img/products/section3/Airspin-5a.png" />
+										</div>
+										<div className={`${styles.product_img} product_img`}>
+											<img src="img/products/section3/Airspin-5b.png" />
+										</div>
+										<div className={`${styles.product_img} product_img`}>
+											<img src="img/products/section3/Airspin-5c.png" />
 										</div>
 									</div>
 								</div>

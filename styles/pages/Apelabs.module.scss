@@ -173,8 +173,8 @@
 	.section2 {
 		.section_content {
 			.slider_wrap {
-				width: 80%;
-				margin: 0 auto;
+				// width: 80%;
+				// margin: 0 auto;
 				@include sm-down {
 					width: 100%;
 				}
@@ -186,19 +186,19 @@
 						margin: 0 10px;
 						border-radius: 50px;
 						&:first-child {
-							background-color: #c1c1c1;
-						}
-						&:nth-child(2) {
 							background-color: #212629;
 						}
-						&:nth-child(3) {
-							background-color: #6b64cc;
+						&:nth-child(2) {
+							background-color: #c1c1c1;
 						}
-						&:nth-child(4) {
+						&:nth-child(3) {
 							background-color: #e89c77;
 						}
-						&:nth-child(5) {
+						&:nth-child(4) {
 							background-color: #7a98d3;
+						}
+						&:nth-child(5) {
+							background-color: #6b64cc;
 						}
 						button {
 							&:before {
@@ -377,8 +377,11 @@
 		overflow: hidden;
 
 		.section_left_content {
-			padding: 0 0%;
-			margin-top: -85%;
+			padding: 0 12%;
+			@include sm-down {
+				padding: 0 0%;
+				margin-top: -85%;
+			}
 		}
 
 		.leaf1 {
