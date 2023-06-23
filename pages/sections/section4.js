@@ -39,7 +39,8 @@ export default function Section4() {
 							<div className={`${styles.section_left_content} col-md-5 text_center`}>
 								<div>
 									<h2 className={`text_primary font_secondary text_lg`}>
-										UP TO 8 HOURS LISTENING TIME
+										UP TO 8 HOURS
+										<br /> LISTENING TIME
 									</h2>
 									<p className={`text_primary ${styles.section_desc}`}>
 										You’ll be bored, but our AirSpin won’t stop. You’ll be short of a
@@ -49,11 +50,11 @@ export default function Section4() {
 									</p>
 								</div>
 								<Link href="">
-									<a className="cmn_white_btn">ORDER NOW</a>
+									<a className="cmn_white_btn hidden_xs">ORDER NOW</a>
 								</Link>
 								<br />
 								<Link href="">
-									<a className="cmn_link">LEARN MORE</a>
+									<a className="cmn_link hidden_xs">LEARN MORE</a>
 								</Link>
 							</div>
 						</div>

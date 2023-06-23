@@ -48,65 +48,65 @@ export default function section2() {
 							<Slider {...settings}>
 								<div>
 									<div className={`${styles.product_wrap}`}>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/left21.png" />
 										</div>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/main_img_sec21.png" />
 										</div>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/right21.png" />
 										</div>
 									</div>
 								</div>
 								<div>
 									<div className={`${styles.product_wrap}`}>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/left21.png" />
 										</div>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/main_img_sec21.png" />
 										</div>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/right21.png" />
 										</div>
 									</div>
 								</div>
 								<div>
 									<div className={`${styles.product_wrap}`}>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/left21.png" />
 										</div>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/main_img_sec21.png" />
 										</div>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/right21.png" />
 										</div>
 									</div>
 								</div>
 								<div>
 									<div className={`${styles.product_wrap}`}>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/left21.png" />
 										</div>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/main_img_sec21.png" />
 										</div>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/right21.png" />
 										</div>
 									</div>
 								</div>
 								<div>
 									<div className={`${styles.product_wrap}`}>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/left21.png" />
 										</div>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/main_img_sec21.png" />
 										</div>
-										<div className="product_img">
+										<div className={`${styles.product_img} product_img`}>
 											<img src="img/products/right21.png" />
 										</div>
 									</div>
@@ -117,11 +117,11 @@ export default function section2() {
 						<ul></ul>
 						<div className={styles.button_wrap}>
 							<Link href="productInside">
-								<a className="cmn_btn black_btn">ORDER NOW</a>
+								<a className="cmn_btn black_btn hidden_xs">ORDER NOW</a>
 							</Link>
 							<br />
 							<Link href="">
-								<a className={`${styles.cmn_link} cmn_link`}>LEARN MORE</a>
+								<a className={`${styles.cmn_link} cmn_link hidden_xs`}>LEARN MORE</a>
 							</Link>
 						</div>
 					</div>

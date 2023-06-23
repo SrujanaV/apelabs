@@ -160,3 +160,9 @@ picture {
 	height: 100vh;
 	@extend %f_r_a_center;
 }
+
+.hidden_xs {
+	@include sm-down {
+		display: none;
+	}
+}

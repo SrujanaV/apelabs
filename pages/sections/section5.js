@@ -32,7 +32,8 @@ export default function Section5() {
 							<div className={`${styles.section_left_content} col-md-5 text_center`}>
 								<div>
 									<h2 className={`text_primary font_secondary text_lg`}>
-										ERGONOMIC DESIGN
+										ERGONOMIC
+										<br /> DESIGN
 									</h2>
 									<p className={`text_primary ${styles.section_desc}`}>
 										Well, we’ve an honest confession. We take pride in throwing our
@@ -43,11 +44,11 @@ export default function Section5() {
 									</p>
 								</div>
 								<Link href="">
-									<a className="cmn_white_btn">ORDER NOW</a>
+									<a className="cmn_white_btn hidden_xs">ORDER NOW</a>
 								</Link>
 								<br />
 								<Link href="">
-									<a className="cmn_link">LEARN MORE</a>
+									<a className="cmn_link hidden_xs">LEARN MORE</a>
 								</Link>
 							</div>
 						</div>

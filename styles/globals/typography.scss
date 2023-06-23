@@ -78,6 +78,9 @@
 	@include md-down {
 		font-size: 36px;
 	}
+	@include sm-down {
+		font-size: 30px;
+	}
 }
 
 // .text_xxl {}

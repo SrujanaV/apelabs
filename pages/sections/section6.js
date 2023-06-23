@@ -32,17 +32,18 @@ export default function Section6() {
 										FASHIONABLE DESIGN
 									</h2>
 									<p className={`text_primary ${styles.section_desc}`}>
-										AirSpin has a unique metallic ring to it. You keep it anywhere in
-										front of anyone, it’s impossible to ignore its stunning design. That’s
-										why we proudly say that you can judge the AirSpin by its looks.
+										FASHIONABLE DESIGN  AirSpin has a unique metallic ring to it. You keep
+										it anywhere in front of anyone, it’s impossible to ignore its stunning
+										design. That’s why we proudly say that you can judge the AirSpin by
+										its looks. 
 									</p>
 								</div>
 								<Link href="">
-									<a className="cmn_white_btn">ORDER NOW</a>
+									<a className="cmn_white_btn hidden_xs">ORDER NOW</a>
 								</Link>
 								<br />
 								<Link href="">
-									<a className="cmn_link">LEARN MORE</a>
+									<a className="cmn_link hidden_xs">LEARN MORE</a>
 								</Link>
 							</div>
 							{/* <div className="col-md-6">

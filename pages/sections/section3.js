@@ -34,12 +34,13 @@ export default function Section3() {
 					{/* <div className={`${styles.section_content} even_section section_spacing`}> */}
 					<div className={`${styles.section_row} row`}>
 						<div className="col-md-6">
-							<img src="img/products/section4prod.png" />
+							{/* <img src="img/products/section4prod.png" /> */}
 						</div>
 						<div className={`${styles.section_left_content} col-md-6 text_center`}>
 							<div>
 								<h2 className={`text_primary font_secondary text_lg`}>
-									SWEAT AND WATER RESISTANT
+									SWEAT AND
+									<br /> WATER RESISTANT
 								</h2>
 								<p className={`text_primary ${styles.section_desc}`}>
 									When we say our AirSpin is built to bear anything from sprinkled water
@@ -48,11 +49,11 @@ export default function Section3() {
 								</p>
 							</div>
 							<Link href="">
-								<a className="cmn_white_btn">ORDER NOW</a>
+								<a className="cmn_white_btn hidden_xs">ORDER NOW</a>
 							</Link>
 							<br />
 							<Link href="">
-								<a className="cmn_link">LEARN MORE</a>
+								<a className="cmn_link hidden_xs">LEARN MORE</a>
 							</Link>
 						</div>
 					</div>
