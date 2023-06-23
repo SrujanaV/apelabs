@@ -24,7 +24,7 @@ export default function section2() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		fade: true,
-		appendDots: (dots) => <ul>{dots}</ul>,
+		arrows: false,
 	};
 	return (
 		<>
@@ -43,77 +43,79 @@ export default function section2() {
 					<img src="img/section4right.png" />
 				</div> */}
 				<div className="container">
-					<div className={`${styles.section_content} even_section section_spacing`}>
-						<Slider {...settings}>
-							<div>
-								<div className={`${styles.product_wrap}`}>
-									<div className="product_img">
-										<img src="img/products/left21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/products/main_img_sec21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/products/right21.png" />
-									</div>
-								</div>
-							</div>
-							<div>
-								<div className={`${styles.product_wrap}`}>
-									<div className="product_img">
-										<img src="img/products/left21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/products/main_img_sec21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/products/right21.png" />
+					<div className={`${styles.section_content} even_section`}>
+						<div className={styles.slider_wrap}>
+							<Slider {...settings}>
+								<div>
+									<div className={`${styles.product_wrap}`}>
+										<div className="product_img">
+											<img src="img/products/left21.png" />
+										</div>
+										<div className="product_img">
+											<img src="img/products/main_img_sec21.png" />
+										</div>
+										<div className="product_img">
+											<img src="img/products/right21.png" />
+										</div>
 									</div>
 								</div>
-							</div>
-							<div>
-								<div className={`${styles.product_wrap}`}>
-									<div className="product_img">
-										<img src="img/products/left21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/products/main_img_sec21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/products/right21.png" />
-									</div>
-								</div>
-							</div>
-							<div>
-								<div className={`${styles.product_wrap}`}>
-									<div className="product_img">
-										<img src="img/products/left21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/products/main_img_sec21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/products/right21.png" />
+								<div>
+									<div className={`${styles.product_wrap}`}>
+										<div className="product_img">
+											<img src="img/products/left21.png" />
+										</div>
+										<div className="product_img">
+											<img src="img/products/main_img_sec21.png" />
+										</div>
+										<div className="product_img">
+											<img src="img/products/right21.png" />
+										</div>
 									</div>
 								</div>
-							</div>
-							<div>
-								<div className={`${styles.product_wrap}`}>
-									<div className="product_img">
-										<img src="img/products/left21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/products/main_img_sec21.png" />
-									</div>
-									<div className="product_img">
-										<img src="img/products/right21.png" />
+								<div>
+									<div className={`${styles.product_wrap}`}>
+										<div className="product_img">
+											<img src="img/products/left21.png" />
+										</div>
+										<div className="product_img">
+											<img src="img/products/main_img_sec21.png" />
+										</div>
+										<div className="product_img">
+											<img src="img/products/right21.png" />
+										</div>
 									</div>
 								</div>
-							</div>
-						</Slider>
-						<p className={styles.section_text}>Pick your colour</p>
+								<div>
+									<div className={`${styles.product_wrap}`}>
+										<div className="product_img">
+											<img src="img/products/left21.png" />
+										</div>
+										<div className="product_img">
+											<img src="img/products/main_img_sec21.png" />
+										</div>
+										<div className="product_img">
+											<img src="img/products/right21.png" />
+										</div>
+									</div>
+								</div>
+								<div>
+									<div className={`${styles.product_wrap}`}>
+										<div className="product_img">
+											<img src="img/products/left21.png" />
+										</div>
+										<div className="product_img">
+											<img src="img/products/main_img_sec21.png" />
+										</div>
+										<div className="product_img">
+											<img src="img/products/right21.png" />
+										</div>
+									</div>
+								</div>
+							</Slider>
+						</div>
+						<p className={`${styles.section_text} text_600`}>Pick your colour</p>
 						<ul></ul>
-						<div className={styles.button_section}>
+						<div className={styles.button_wrap}>
 							<Link href="productInside">
 								<a className="cmn_btn black_btn">ORDER NOW</a>
 							</Link>

@@ -23,7 +23,16 @@ export default function ProductInside() {
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		appendDots: (dots) => <ul>{dots}</ul>,
+		prevArrow: (
+			<div className={`${styles.prev_arrow}`}>
+				<img src="img/prev.png" />
+			</div>
+		),
+		nextArrow: (
+			<div className={`${styles.next_arrow}`}>
+				<img src="img/next.png" />
+			</div>
+		),
 	};
 	return (
 		<>

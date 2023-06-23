@@ -165,6 +165,39 @@
 
 	.section2 {
 		.section_content {
+			.slider_wrap {
+				width: 80%;
+				margin: 0 auto;
+				:global(.slick-dots) {
+					bottom: -75px;
+					li {
+						width: 25px;
+						height: 25px;
+						margin: 0 10px;
+						border-radius: 50px;
+						&:first-child {
+							background-color: #c1c1c1;
+						}
+						&:nth-child(2) {
+							background-color: #212629;
+						}
+						&:nth-child(3) {
+							background-color: #6b64cc;
+						}
+						&:nth-child(4) {
+							background-color: #e89c77;
+						}
+						&:nth-child(5) {
+							background-color: #7a98d3;
+						}
+						button {
+							&:before {
+								font-size: 0;
+							}
+						}
+					}
+				}
+			}
 			.product_wrap {
 				@extend %f_r_a_center;
 
@@ -182,13 +215,16 @@
 			}
 
 			.section_text {
+				margin-top: 15px;
 				text-align: center;
 			}
 
-			.button_section {
-				align-items: center;
+			.button_wrap {
+				margin-top: 40px;
+				@extend %f_r_aj_center;
 
 				.cmn_link {
+					margin-left: 10px;
 					color: var(--color_secondary);
 
 					&:after {
