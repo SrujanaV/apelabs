@@ -168,3 +168,9 @@ picture {
 		display: none !important;
 	}
 }
+.hidden_desktop {
+	display: none;
+	@include sm-down {
+		display: block;
+	}
+}

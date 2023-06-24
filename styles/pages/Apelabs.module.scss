@@ -104,9 +104,9 @@
 				width: 38%;
 				z-index: 2;
 				@include sm-down {
-					left: -40%;
-					bottom: 28%;
-					width: 76%;
+					left: -57%;
+					bottom: 33%;
+					width: 90%;
 				}
 			}
 
@@ -116,9 +116,9 @@
 				width: 38%;
 				z-index: 2;
 				@include sm-down {
-					right: -54%;
-					bottom: 25%;
-					width: 90%;
+					right: -66%;
+					bottom: 32%;
+					width: 100%;
 				}
 			}
 
@@ -138,9 +138,9 @@
 					mix-blend-mode: screen;
 					@include sm-down {
 						position: absolute;
-						width: 234vw;
-						left: -68vw;
-						top: -83vw;
+						width: 270vw;
+						left: -88vw;
+						top: -98vw;
 					}
 				}
 
