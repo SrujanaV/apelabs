@@ -7,7 +7,7 @@ const Footer = () => {
 	return (
 		<footer className={`${styles.main_footer} hidden_desktop`}>
 			<div className={styles.footer_ape}>
-				<img src="img/white_ape.png" className={`${styles.white_ape} ape_img`} />
+				<img src="img/white_ape.png" className={`${styles.white_ape}`} />
 			</div>
 			<div className={`${styles.footer_links} ${styles.order}`}>
 				<Link href="">
