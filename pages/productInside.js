@@ -122,7 +122,7 @@ export default function ProductInside() {
 								ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 							</p>
 							<Link href="">
-								<a className={`${styles.inside_btn} cmn_btn`}>ORDER</a>
+								<a className={`${styles.inside_btn} cmn_btn`}>ADD TO CART</a>
 							</Link>
 							<br />
 							<ScrollLink

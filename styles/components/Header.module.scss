@@ -90,3 +90,29 @@
 		}
 	}
 }
+
+.menu {
+	@extend %full_overlay;
+	background-color: black;
+	z-index: 9;
+	padding: 20px;
+	padding-top: 100px;
+	transition: var(--transition);
+	a {
+		display: block;
+		padding: 20px 0;
+		border-bottom: solid 1px rgba(white, 0.5);
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+}
+.close {
+	img {
+		width: 30px;
+		filter: invert(1);
+	}
+}
+.mobile_cart {
+	margin: 0 10px !important;
+}

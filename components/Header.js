@@ -1,11 +1,19 @@
 // MODULES //
 import { useState, useEffect } from "react";
+
+//COMPONENTS//
+import ToggleMenu from "./ToggleMenu";
 import Link from "next/link";
 
 // STYLES //
 import styles from "../styles/components/Header.module.scss";
 
 const Header = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggleMenu = () => {
+		setIsOpen(!isOpen);
+	};
 	return (
 		<>
 			<div id="header" className={styles.header}>
@@ -28,11 +36,11 @@ const Header = () => {
 										AIRSPIN
 									</a>
 								</Link>
-								<Link href="">
+								{/* <Link href="">
 									<a className={`text_sm text_600 text_primary ${styles.link}`}>
 										PRODUCT
 									</a>
-								</Link>
+								</Link> */}
 							</div>
 							<Link href="">
 								<a className="hidden_xs">
@@ -42,12 +50,22 @@ const Header = () => {
 							</Link>
 							<Link href="">
 								<a className={`text_xs text_primary hidden_xs ${styles.small_link}`}>
+									LOG IN
+								</a>
+							</Link>
+							<Link href="">
+								<a className={`text_xs text_primary hidden_xs ${styles.small_link}`}>
 									HELP
 								</a>
 							</Link>
 							<Link href="">
 								<a className={`text_xs text_primary hidden_xs ${styles.small_link}`}>
-									LOG IN
+									CONTACT US
+								</a>
+							</Link>
+							<Link href="">
+								<a className={`text_xs text_primary hidden_xs ${styles.small_link}`}>
+									TRACK ORDER
 								</a>
 							</Link>
 							<Link href="">
@@ -55,15 +73,55 @@ const Header = () => {
 									<img src="img/cart.png" />
 								</a>
 							</Link>
-							<Link href="">
-								<a className={`${styles.hamburger}`}>
-									<img src="img/bar.png" />
-								</a>
-							</Link>
+							{isOpen && (
+								<Link href="">
+									<a className={`text_xs text_primary ${styles.small_link}`}>LOG IN</a>
+								</Link>
+							)}
+							{isOpen && (
+								<Link href="">
+									<a className={`${styles.cart} ${styles.mobile_cart}`}>
+										<img src="img/cart.png" />
+									</a>
+								</Link>
+							)}
+							{!isOpen && (
+								<div onClick={toggleMenu}>
+									<a className={`${styles.hamburger} hidden_desktop`}>
+										<img src="img/bar.png" />
+									</a>
+								</div>
+							)}
+							{isOpen && (
+								<div onClick={toggleMenu}>
+									<a className={`${styles.close} hidden_desktop`}>
+										<img src="img/close.png" />
+									</a>
+								</div>
+							)}
 						</div>
 					</div>
 				</div>
 			</div>
+			{isOpen && (
+				<div className={styles.menu}>
+					<Link href="">
+						<a className={`text_reg text_600 text_primary ${styles.link}`}>APELAND</a>
+					</Link>
+					<Link href="">
+						<a className={`text_reg text_600 text_primary ${styles.link}`}>AIRSPIN</a>
+					</Link>
+					<Link href="">
+						<a className={`text_sm text_primary ${styles.small_link}`}>HELP</a>
+					</Link>
+					<Link href="">
+						<a className={`text_sm text_primary ${styles.small_link}`}>CONTACT US</a>
+					</Link>
+					<Link href="">
+						<a className={`text_sm text_primary ${styles.small_link}`}>TRACK ORDER</a>
+					</Link>
+				</div>
+			)}
 		</>
 	);
 };
