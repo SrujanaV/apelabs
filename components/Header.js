@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 
 //COMPONENTS//
-import ToggleMenu from "./ToggleMenu";
 import Link from "next/link";
 
 // STYLES //
@@ -14,6 +13,13 @@ const Header = () => {
 	const toggleMenu = () => {
 		setIsOpen(!isOpen);
 	};
+	useEffect(() => {
+		if (isOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "auto";
+		}
+	}, [isOpen]);
 	return (
 		<>
 			<div id="header" className={styles.header}>
