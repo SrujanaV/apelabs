@@ -95,14 +95,19 @@
 
 		.heroSection2 {
 			overflow: hidden;
-			width: 60%;
-			// width: 50%;
+			// width: 60%;
+			width: 50%;
 
 			.hero_left1 {
 				left: 0;
 				bottom: 0;
 				width: 38%;
 				z-index: 2;
+				@include sm-down {
+					left: -40%;
+					bottom: 28%;
+					width: 76%;
+				}
 			}
 
 			.hero_left2 {
@@ -110,6 +115,11 @@
 				bottom: 0;
 				width: 38%;
 				z-index: 2;
+				@include sm-down {
+					right: -54%;
+					bottom: 25%;
+					width: 90%;
+				}
 			}
 
 			.hero2_content {
@@ -117,6 +127,21 @@
 
 				.airspin_text_img {
 					@extend %rel_xy_center;
+					@include sm-down {
+						bottom: -100px;
+						width: 58vw;
+						left: 50vw;
+						flex-direction: column;
+					}
+				}
+				.logo_img {
+					mix-blend-mode: screen;
+					@include sm-down {
+						position: absolute;
+						width: 234vw;
+						left: -68vw;
+						top: -83vw;
+					}
 				}
 
 				.airspin_img {
@@ -129,6 +154,12 @@
 			}
 			.button_section {
 				bottom: 100px;
+				@include sm-down {
+					width: 60vw;
+					bottom: -235px;
+					flex-direction: column;
+					left: 50vw;
+				}
 			}
 		}
 	}
