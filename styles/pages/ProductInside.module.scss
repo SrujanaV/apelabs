@@ -144,7 +144,7 @@
 		}
 		.product_img {
 			width: 60%;
-			height: 85vh;
+			height: 100vh;
 			margin: 0 auto;
 			@extend %f_r_a_center;
 			@include sm-down {

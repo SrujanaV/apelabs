@@ -21,6 +21,10 @@ import Slider from "react-slick";
 
 /** Home Page */
 export default function ProductInside() {
+	const [activeTab, setActiveTab] = useState(0);
+	const handleTabClick = (index) => {
+		setActiveTab(index);
+	};
 	useEffect(() => {
 		let winWidth = window.innerWidth;
 		var prevScrollpos = window.scrollY;
@@ -80,11 +84,36 @@ export default function ProductInside() {
 							/>
 							<p className={`${styles.rupee_text} text_xl`}>₹ 1700</p>
 							<div className={styles.colors}>
-								<div className={styles.colors_inside}></div>
-								<div className={styles.colors_inside}></div>
-								<div className={styles.colors_inside}></div>
-								<div className={styles.colors_inside}></div>
-								<div className={styles.colors_inside}></div>
+								<div
+									className={`${styles.colors_inside} ${
+										activeTab === 0 ? "active" : ""
+									}`}
+									onClick={() => handleTabClick(0)}
+								></div>
+								<div
+									className={`${styles.colors_inside} ${
+										activeTab === 1 ? "active" : ""
+									}`}
+									onClick={() => handleTabClick(1)}
+								></div>
+								<div
+									className={`${styles.colors_inside} ${
+										activeTab === 2 ? "active" : ""
+									}`}
+									onClick={() => handleTabClick(2)}
+								></div>
+								<div
+									className={`${styles.colors_inside} ${
+										activeTab === 3 ? "active" : ""
+									}`}
+									onClick={() => handleTabClick(3)}
+								></div>
+								<div
+									className={`${styles.colors_inside} ${
+										activeTab === 4 ? "active" : ""
+									}`}
+									onClick={() => handleTabClick(4)}
+								></div>
 							</div>
 							<p className={`${styles.content} text_reg`}>
 								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -111,23 +140,101 @@ export default function ProductInside() {
 					</div>
 				</div>
 				<div className={styles.inside_right}>
-					<Slider {...settings}>
-						<div>
-							<div className={styles.product_img}>
-								<img src="img/products/main_img_sec21.png" />
+					{activeTab === 0 && (
+						<Slider {...settings}>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-2a.png" />
+								</div>
 							</div>
-						</div>
-						<div>
-							<div className={styles.product_img}>
-								<img src="img/products/main_img_sec21.png" />
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-2b.png" />
+								</div>
 							</div>
-						</div>
-						<div>
-							<div className={styles.product_img}>
-								<img src="img/products/main_img_sec21.png" />
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-2c.png" />
+								</div>
 							</div>
-						</div>
-					</Slider>
+						</Slider>
+					)}
+					{activeTab === 1 && (
+						<Slider {...settings}>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-1a.png" />
+								</div>
+							</div>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-1b.png" />
+								</div>
+							</div>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-1c.png" />
+								</div>
+							</div>
+						</Slider>
+					)}
+					{activeTab === 2 && (
+						<Slider {...settings}>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-5a.png" />
+								</div>
+							</div>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-5b.png" />
+								</div>
+							</div>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-5c.png" />
+								</div>
+							</div>
+						</Slider>
+					)}
+					{activeTab === 3 && (
+						<Slider {...settings}>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-3a.png" />
+								</div>
+							</div>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-3b.png" />
+								</div>
+							</div>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-3c.png" />
+								</div>
+							</div>
+						</Slider>
+					)}
+					{activeTab === 4 && (
+						<Slider {...settings}>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-4a.png" />
+								</div>
+							</div>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-4b.png" />
+								</div>
+							</div>
+							<div>
+								<div className={styles.product_img}>
+									<img src="img/products/section3/Airspin-4c.png" />
+								</div>
+							</div>
+						</Slider>
+					)}
 				</div>
 			</section>
 			<section className={styles.features} id="features">
