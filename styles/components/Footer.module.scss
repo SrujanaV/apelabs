@@ -1,5 +1,28 @@
 @import "../helpers/helpers.scss";
 
 .main_footer {
-  // height: 100px;
+	@extend %relative_box;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	@extend %d_flex;
+	z-index: 8;
+	.footer_ape {
+		position: absolute;
+		right: 10px;
+		bottom: 50px;
+	}
+	.footer_links {
+		width: 50%;
+		text-align: center;
+		padding: 10px 0;
+		&.order {
+			background-color: #560dbd;
+			color: white;
+		}
+		&.learn {
+			background-color: white;
+			color: #560dbd;
+		}
+	}
 }

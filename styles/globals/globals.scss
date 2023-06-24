@@ -169,8 +169,8 @@ picture {
 	}
 }
 .hidden_desktop {
-	display: none;
+	display: none !important;
 	@include sm-down {
-		display: block;
+		display: flex !important;
 	}
 }
