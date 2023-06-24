@@ -97,6 +97,7 @@ picture {
 	margin-top: 20px;
 	transition: ease all 300ms;
 	font-weight: 600;
+	text-align: center;
 }
 .cmn_white_btn {
 	border: solid 1px var(--color_primary);
@@ -127,6 +128,7 @@ picture {
 	@extend %relative_box;
 	margin-top: 20px;
 	font-weight: 700;
+	text-align: center;
 	&:hover {
 		&:after {
 			width: 0;
