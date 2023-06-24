@@ -30,7 +30,8 @@ export default function heroSection1() {
 	// 		scrollTrigger: {
 	// 			trigger: ".hero_wrap",
 	// 			start: "top top",
-	// 			end: () => winWidth,
+	// 			// end: "bottom 80%",
+	// 			end: "+=200",
 	// 			scrub: true,
 	// 			pin: true,
 	// 			pinSpacing: false,
@@ -51,7 +52,7 @@ export default function heroSection1() {
 					backgroundRepeat: `no-repeat`,
 				}}
 			>
-				{/* <div
+				<div
 					className={`${styles.heroSection1} ${styles.section_wrap} section`}
 					// style={{
 					// 	backgroundImage: `url("img/hero_bg.jpg")`,
@@ -79,7 +80,7 @@ export default function heroSection1() {
 							</div>
 						</div>
 					</div>
-				</div> */}
+				</div>
 				<div className={`${styles.heroSection2} ${styles.section_wrap} section`}>
 					<div className={`${styles.hero_left1} ${styles.elements}`}>
 						<img src="img/hero_left1.png" />
