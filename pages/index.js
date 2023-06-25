@@ -2,22 +2,55 @@
 import { useState, useEffect } from "react";
 
 // STYLES //
-import styles from "../styles/pages/Home.module.scss";
+import styles from "../styles/pages/Apelabs.module.scss";
 
 // COMPONENTS //
-import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Head from "next/head";
 import Link from "next/link";
 
+// Sections //
+import HeroSection1 from "./sections/heroSection1";
+import Section1 from "./sections/section1";
+import Section2 from "./sections/section2";
+import Section3 from "./sections/section3";
+import Section4 from "./sections/section4";
+import Section5 from "./sections/section5";
+import Section6 from "./sections/section6";
+
 // PLUGINS //
-// import ScrollOut from "scroll-out";
+import ScrollOut from "scroll-out";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 // IMAGES //
 // import abtImage from "../public/img/home/how_about.png";
 
 /** Home Page */
 export default function Home() {
+	useEffect(() => {
+		let winWidth = window.innerWidth;
+		var prevScrollpos = window.scrollY;
+		window.onscroll = function () {
+			var currentScrollPos = window.scrollY;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("header").style.top = "0";
+			} else {
+				document.getElementById("header").style.top = "-80px";
+			}
+			prevScrollpos = currentScrollPos;
+			if (prevScrollpos > 50) {
+				document.getElementById("header").style.backdropFilter =
+					"saturate(180%) blur(20px)";
+				document.getElementById("header").style.backgroundColor =
+					"rgba(66,66,66,.8)";
+			} else {
+				document.getElementById("header").style.backdropFilter = "none";
+				document.getElementById("header").style.backgroundColor = "transparent";
+			}
+		};
+	}, []);
 	return (
 		<div>
 			<Head>
@@ -27,9 +60,14 @@ export default function Home() {
 			</Head>
 
 			<Header />
-			<main className={`${styles.index_page}`}>
-				<div className=""></div>
-				<div className=""></div>
+			<main className={`${styles.apelabs}`}>
+				<HeroSection1 />
+				<Section1 />
+				<Section2 />
+				<Section3 />
+				<Section4 />
+				<Section5 />
+				<Section6 />
 			</main>
 			<Footer />
 		</div>

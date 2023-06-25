@@ -1,7 +1,5 @@
 // MODULES //
 import { useState, useEffect } from "react";
-import Head from "next/head";
-import Link from "next/link";
 
 // STYLES //
 import styles from "../styles/pages/Apelabs.module.scss";
@@ -9,6 +7,8 @@ import styles from "../styles/pages/Apelabs.module.scss";
 // COMPONENTS //
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Head from "next/head";
+import Link from "next/link";
 
 // Sections //
 import HeroSection1 from "./sections/heroSection1";
