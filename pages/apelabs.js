@@ -34,6 +34,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Apelabs() {
 	useEffect(() => {
 		let winWidth = window.innerWidth;
+		let winHeight = window.innerHeight;
 		var prevScrollpos = window.scrollY;
 		window.onscroll = function () {
 			var currentScrollPos = window.scrollY;
@@ -51,6 +52,12 @@ export default function Apelabs() {
 			} else {
 				document.getElementById("header").style.backdropFilter = "none";
 				document.getElementById("header").style.backgroundColor = "transparent";
+			}
+
+			if (currentScrollPos > 1.5 * winHeight) {
+				document.getElementById("footer").style.opacity = "1";
+			} else {
+				document.getElementById("footer").style.opacity = "0";
 			}
 		};
 	}, []);

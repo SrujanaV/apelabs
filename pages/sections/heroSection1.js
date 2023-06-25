@@ -42,6 +42,20 @@ export default function heroSection1() {
 	// 	});
 	// }, []);
 
+	// const moveText = gsap.timeline({});
+	// 	moveText.to(".hero_wrap", { duration: 1, x: "-100%" }, "moveHero");
+
+	// 	ScrollTrigger.create({
+	// 		trigger: ".hero_wrap",
+	// 		markers: true,
+	// 		scrub: true,
+	// 		start: "top top",
+	// 		end: "+=" + 500,
+	// 		pin: ".hero_wrap",
+	// 		pinSpacing: false,
+	// 		animation: moveText,
+	// 	});
+
 	return (
 		<>
 			<section
