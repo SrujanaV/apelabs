@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 // STYLES //
-import styles from "../styles/pages/Apelabs.module.scss";
+import styles from "../styles/pages/Home.module.scss";
 
 // COMPONENTS //
 import Footer from "../components/Footer";
@@ -13,11 +13,6 @@ import Link from "next/link";
 // Sections //
 import HeroSection1 from "./sections/heroSection1";
 import Section1 from "./sections/section1";
-import Section2 from "./sections/section2";
-import Section3 from "./sections/section3";
-import Section4 from "./sections/section4";
-import Section5 from "./sections/section5";
-import Section6 from "./sections/section6";
 
 // PLUGINS //
 import ScrollOut from "scroll-out";
@@ -29,35 +24,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 /** Home Page */
 export default function Home() {
-	useEffect(() => {
-		let winWidth = window.innerWidth;
-		let winHeight = window.innerHeight;
-		var prevScrollpos = window.scrollY;
-		window.onscroll = function () {
-			var currentScrollPos = window.scrollY;
-			if (prevScrollpos > currentScrollPos) {
-				document.getElementById("header").style.top = "0";
-			} else {
-				document.getElementById("header").style.top = "-80px";
-			}
-			prevScrollpos = currentScrollPos;
-			if (prevScrollpos > 50) {
-				document.getElementById("header").style.backdropFilter =
-					"saturate(180%) blur(20px)";
-				document.getElementById("header").style.backgroundColor =
-					"rgba(66,66,66,.8)";
-			} else {
-				document.getElementById("header").style.backdropFilter = "none";
-				document.getElementById("header").style.backgroundColor = "transparent";
-			}
-
-			if (currentScrollPos > 1.5 * winHeight) {
-				document.getElementById("footer").style.opacity = "1";
-			} else {
-				document.getElementById("footer").style.opacity = "0";
-			}
-		};
-	}, []);
 	return (
 		<div>
 			<Head>
@@ -67,14 +33,53 @@ export default function Home() {
 			</Head>
 
 			<Header />
-			<main className={`${styles.apelabs}`}>
-				<HeroSection1 />
-				<Section1 />
-				<Section2 />
-				<Section3 />
-				<Section4 />
-				<Section5 />
-				<Section6 />
+			<main className={`${styles.index_page}`}>
+				<div className={styles.index_wrap}>
+					<div
+						className={`${styles.section_wrap}`}
+						style={{
+							backgroundImage: `url("img/bg1.jpg")`,
+						}}
+					>
+						<div className={styles.hero_content}>
+							<div className={styles.logo_img}>
+								<img src="img/apeland.png" />
+							</div>
+							<h2 className={`${styles.hero_text} text_secondary text_600 text_md`}>
+								JOIN A TRIBE
+								<br /> AS OFFBEAT AS YOU
+							</h2>
+							<div className={styles.hero_img}>
+								<img src="img/monkey1.png" />
+							</div>
+							<Link href="">
+								<a className={`${styles.black_btn} black_btn text_md"`}>ORDER NOW</a>
+							</Link>
+						</div>
+					</div>
+					<div
+						className={`${styles.section_wrap}`}
+						style={{
+							backgroundImage: `url("img/bg2.jpg")`,
+						}}
+					>
+						<div className={styles.hero_content}>
+							<div className={styles.logo_img}>
+								<img src="img/apelabs.png" />
+							</div>
+							<h2 className={`${styles.hero_text} text_primary text_600 text_md`}>
+								JOIN A TRIBE
+								<br /> AS OFFBEAT AS YOU
+							</h2>
+							<div className={styles.hero_img}>
+								<img src="img/mastmask.png" />
+							</div>
+							<Link href="apelabs">
+								<a className={`${styles.black_btn} black_btn text_md"`}>ORDER NOW</a>
+							</Link>
+						</div>
+					</div>
+				</div>
 			</main>
 			<Footer />
 		</div>

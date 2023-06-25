@@ -1,6 +1,68 @@
 @import "../helpers/helpers.scss";
 
 .index_page {
-  min-height: 100vh;
-  @extend %f_r_aj_center;
+	min-height: 100vh;
+	.index_wrap {
+		@extend %f_r_a_center;
+		width: 100%;
+		.section_wrap {
+			transition: var(--transition);
+			background-size: cover;
+			width: 50%;
+			height: 100vh;
+			text-align: center;
+
+			&:hover {
+				width: 60%;
+			}
+			&:first-child {
+				.hero_content {
+					.hero_img {
+						width: 35%;
+					}
+				}
+			}
+
+			.hero_content {
+				height: 100%;
+				@extend %f_r_a_center;
+				flex-direction: column;
+				justify-content: center;
+				.logo_img {
+					img {
+						margin: 0 auto;
+					}
+				}
+
+				.hero_text {
+					margin: 10px 0;
+				}
+
+				.hero_img {
+					width: 25%;
+					margin: 0 auto;
+
+					img {
+						margin: 0 auto;
+					}
+				}
+
+				.black_btn {
+					border-radius: 20px;
+					padding: 10px 20px;
+					display: inline-block;
+					margin-top: 20px;
+					transition: ease all 300ms;
+					font-weight: 600;
+					text-align: center;
+					background-color: var(--color_secondary);
+					&:hover {
+						border: solid 1px white;
+						background-color: transparent;
+						color: white;
+					}
+				}
+			}
+		}
+	}
 }
