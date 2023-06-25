@@ -1,17 +1,20 @@
 @import "../helpers/helpers.scss";
 
+.footer_ape {
+	position: fixed;
+	z-index: 5;
+	right: 10px;
+	bottom: 50px;
+}
 .main_footer {
+	transition: var(--transition);
+	opacity: 0;
 	@extend %relative_box;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
 	@extend %d_flex;
 	z-index: 8;
-	.footer_ape {
-		position: absolute;
-		right: 10px;
-		bottom: 50px;
-	}
 	.footer_links {
 		width: 50%;
 		text-align: center;
