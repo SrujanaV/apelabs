@@ -207,6 +207,23 @@
 	}
 
 	.section2 {
+		.leaf1 {
+			left: 0;
+			top: 0;
+			width: 50%;
+			@include sm-down {
+				width: 80%;
+			}
+		}
+
+		.leaf2 {
+			right: 0;
+			bottom: 0;
+			width: 50%;
+			@include sm-down {
+				width: 70%;
+			}
+		}
 		.section_content {
 			.slider_wrap {
 				// width: 80%;

@@ -74,6 +74,12 @@ export default function ProductInside() {
 		<div className={styles.product_inside_wrap}>
 			<Header />
 			<section className={styles.product_inside}>
+				<div className={`${styles.leaf1} ${styles.elements}`}>
+					<img src="img/1a.png" />
+				</div>
+				<div className={`${styles.leaf2} ${styles.elements}`}>
+					<img src="img/1b.png" />
+				</div>
 				<div className={styles.inside_left}>
 					<div className={styles.left_content}>
 						<div>

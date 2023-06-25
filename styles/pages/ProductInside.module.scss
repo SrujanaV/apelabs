@@ -7,6 +7,7 @@
 	}
 }
 .product_inside {
+	@extend %relative_box;
 	overflow: hidden;
 	@extend %d_flex;
 	height: 100vh;
@@ -14,6 +15,25 @@
 		flex-direction: column-reverse;
 		flex-wrap: wrap;
 		height: unset;
+	}
+	.leaf1 {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50%;
+		@include sm-down {
+			width: 80%;
+		}
+	}
+
+	.leaf2 {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 50%;
+		@include sm-down {
+			width: 70%;
+		}
 	}
 	:global(.slick-slider) {
 		height: 100vh;
@@ -85,6 +105,8 @@
 		.left_content {
 			margin-top: 100px;
 			width: 80%;
+			@extend %relative_box;
+			z-index: 1;
 			@include sm-down {
 				width: 100%;
 				margin-top: 0;

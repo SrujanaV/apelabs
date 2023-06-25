@@ -30,18 +30,18 @@ export default function section2() {
 		<>
 			<section
 				className={`${styles.section2} ${styles.section_wrap} section`}
-				style={{
-					backgroundImage: `url("img/section2_bg.jpg")`,
-					backgroundSize: `cover`,
-					backgroundRepeat: `no-repeat`,
-				}}
+				// style={{
+				// 	backgroundImage: `url("img/section2_bg.jpg")`,
+				// 	backgroundSize: `cover`,
+				// 	backgroundRepeat: `no-repeat`,
+				// }}
 			>
-				{/* <div className={`${styles.leaf1} ${styles.elements}`}>
-					<img src="img/section4lleft.png" />
+				<div className={`${styles.leaf1} ${styles.elements}`}>
+					<img src="img/1a.png" />
 				</div>
 				<div className={`${styles.leaf2} ${styles.elements}`}>
-					<img src="img/section4right.png" />
-				</div> */}
+					<img src="img/1b.png" />
+				</div>
 				<div className="container">
 					<div className={`${styles.section_content} even_section`}>
 						<div className={styles.slider_wrap}>

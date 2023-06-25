@@ -6,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
 	return (
 		<>
-			<div className={styles.footer_ape}>
+			<div className={`${styles.footer_ape} hidden_desktop`}>
 				<img src="img/white_ape.png" className={`${styles.white_ape}`} />
 			</div>
 			<footer className={`${styles.main_footer} hidden_desktop`} id="footer">
