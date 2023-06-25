@@ -36,6 +36,8 @@ export default function Apelabs() {
 		let winWidth = window.innerWidth;
 		let winHeight = window.innerHeight;
 		var prevScrollpos = window.scrollY;
+		document.getElementById("header").style.top = "0";
+		document.getElementById("footer").style.opacity = "0";
 		window.onscroll = function () {
 			var currentScrollPos = window.scrollY;
 			if (prevScrollpos > currentScrollPos) {

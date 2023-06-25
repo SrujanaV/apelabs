@@ -5,15 +5,25 @@
 	.index_wrap {
 		@extend %f_r_a_center;
 		width: 100%;
+		@include sm-down {
+			flex-direction: column;
+		}
 		.section_wrap {
 			transition: var(--transition);
 			background-size: cover;
 			width: 50%;
 			height: 100vh;
 			text-align: center;
+			@include sm-down {
+				width: 100%;
+				background-position: center;
+			}
 
 			&:hover {
 				width: 60%;
+				@include sm-down {
+					width: 100%;
+				}
 			}
 			&:first-child {
 				.hero_content {
