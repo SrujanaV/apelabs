@@ -53,7 +53,7 @@ export default function Home() {
 								<img src="img/monkey1.png" />
 							</div>
 							<Link href="">
-								<a className={`${styles.black_btn} black_btn text_md"`}>ORDER NOW</a>
+								<a className={`${styles.black_btn} black_btn text_md"`}>KNOW MORE</a>
 							</Link>
 						</div>
 					</div>
@@ -75,7 +75,7 @@ export default function Home() {
 								<img src="img/mastmask.png" />
 							</div>
 							<Link href="apelabs">
-								<a className={`${styles.black_btn} black_btn text_md"`}>ORDER NOW</a>
+								<a className={`${styles.black_btn} black_btn text_md"`}>KNOW MORE</a>
 							</Link>
 						</div>
 					</div>

@@ -10,20 +10,17 @@
 		}
 		.section_wrap {
 			transition: var(--transition);
-			background-size: cover;
 			width: 50%;
 			height: 100vh;
 			text-align: center;
+			background-size: 100%;
+			background-position: center;
 			@include sm-down {
 				width: 100%;
-				background-position: center;
 			}
 
 			&:hover {
-				width: 60%;
-				@include sm-down {
-					width: 100%;
-				}
+				background-size: 110%;
 			}
 			&:first-child {
 				.hero_content {
