@@ -1,7 +1,7 @@
 @import "../helpers/helpers.scss";
 
 .apelabs {
-	overflow: hidden;
+	// overflow: hidden;
 
 	.elements {
 		position: absolute;
@@ -79,6 +79,14 @@
 
 					.hero_text {
 						margin: 20px 0;
+					}
+					.hero_img_apeland {
+						width: 70%;
+						margin: 0 auto;
+
+						img {
+							margin: 0 auto;
+						}
 					}
 
 					.hero_img {
@@ -454,6 +462,48 @@
 				right: -16%;
 				bottom: 4%;
 				width: 90%;
+			}
+		}
+	}
+}
+
+.apeland {
+	.heroSection1 {
+		width: 30% !important;
+	}
+	.heroSection3 {
+		width: 25% !important;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	.heroSection2 {
+		width: 45% !important;
+		justify-content: center;
+	}
+	.content_wrap {
+		@extend %relative_box;
+		background-color: rgba($color: white, $alpha: 0.7);
+		border-radius: 20px;
+		padding: 20px 30px;
+		max-width: 500px;
+		text-align: center;
+		&.gig {
+			max-width: 300px;
+		}
+		img {
+			margin: 0 auto;
+		}
+		.chat_icon {
+			position: absolute;
+			right: 50px;
+			bottom: 0;
+			transform: translateY(100%);
+		}
+		.social_icons {
+			margin-top: 10px;
+			@extend %f_r_aj_center;
+			.icon {
+				margin: 0 10px;
 			}
 		}
 	}

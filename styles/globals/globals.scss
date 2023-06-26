@@ -175,3 +175,17 @@ picture {
 		display: flex !important;
 	}
 }
+
+.animateDefault {
+	&[data-scroll] {
+		transition: all 0.5s ease-out;
+	}
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+}

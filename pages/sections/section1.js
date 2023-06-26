@@ -7,13 +7,20 @@ import Link from "next/link";
 import styles from "../../styles/pages/Apelabs.module.scss";
 
 // PLUGINS //
-// import ScrollOut from "scroll-out";
+import ScrollOut from "scroll-out";
 
 // IMAGES //
 // import bg1 from "img/section1_bg.png";
 
 /** Home Page */
 export default function Section1() {
+	useEffect(() => {
+		ScrollOut({
+			targets: ".animateDefault",
+			// offset: 800,
+			once: true,
+		});
+	}, []);
 	return (
 		<>
 			<section
@@ -36,18 +43,18 @@ export default function Section1() {
 							<div
 								className={`${styles.section_left_content} col-md-6 col-xs-12 text_center`}
 							>
-								<h2 className={`text_primary font_secondary text_xl`}>
+								<h2 className={`text_primary font_secondary text_xl animateDefault`}>
 									LITSTEN TO THE BEAT OF YOUR OFFBEAT HEART
 								</h2>
 								<Link href="">
-									<a className="cmn_white_btn">ORDER NOW</a>
+									<a className="cmn_white_btn animateDefault">ORDER NOW</a>
 								</Link>
 								<br />
 								<Link href="productInside">
-									<a className="cmn_link">LEARN MORE</a>
+									<a className="cmn_link animateDefault">LEARN MORE</a>
 								</Link>
 							</div>
-							<div className="col-md-6">
+							<div className="col-md-6 animateDefault">
 								<img src="img/products/product1.png" />
 							</div>
 						</div>

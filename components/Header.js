@@ -32,12 +32,12 @@ const Header = () => {
 						</Link>
 						<div className={styles.header_links}>
 							<div className={`${styles.other_links} hidden_xs`}>
-								<Link href="">
+								<Link href="apeland">
 									<a className={`text_sm text_600 text_primary ${styles.link}`}>
 										APELAND
 									</a>
 								</Link>
-								<Link href="">
+								<Link href="apelabs">
 									<a className={`text_sm text_600 text_primary ${styles.link}`}>
 										AIRSPIN
 									</a>

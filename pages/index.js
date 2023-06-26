@@ -52,7 +52,7 @@ export default function Home() {
 							<div className={styles.hero_img}>
 								<img src="img/monkey1.png" />
 							</div>
-							<Link href="">
+							<Link href="apeland">
 								<a className={`${styles.black_btn} black_btn text_md"`}>KNOW MORE</a>
 							</Link>
 						</div>
