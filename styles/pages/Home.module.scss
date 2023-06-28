@@ -2,11 +2,14 @@
 
 .index_page {
 	min-height: 100vh;
+	@include sm-down {
+		height: unset;
+	}
 	.index_wrap {
 		@extend %f_r_a_center;
 		width: 100%;
 		@include sm-down {
-			flex-direction: column;
+			flex-direction: column-reverse;
 		}
 		.section_wrap {
 			transition: var(--transition);
@@ -14,9 +17,13 @@
 			height: 100vh;
 			text-align: center;
 			background-size: 100%;
+			background-repeat: no-repeat;
 			background-position: center;
 			@include sm-down {
+				padding-top: 50px;
+				padding-bottom: 50px;
 				width: 100%;
+				height: unset;
 			}
 
 			&:hover {
@@ -36,6 +43,9 @@
 				flex-direction: column;
 				justify-content: center;
 				.logo_img {
+					@include sm-down {
+						width: 200px;
+					}
 					img {
 						margin: 0 auto;
 					}
@@ -43,6 +53,9 @@
 
 				.hero_text {
 					margin: 10px 0;
+					@include sm-down {
+						font-size: 16px;
+					}
 				}
 
 				.hero_img {
@@ -67,6 +80,9 @@
 						border: solid 1px white;
 						background-color: transparent;
 						color: white;
+					}
+					@include sm-down {
+						font-size: 16px;
 					}
 				}
 			}
